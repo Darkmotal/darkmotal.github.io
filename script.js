@@ -1,1 +1,5 @@
-var g = prompt("Are you here?", "Here");
+var g;
+if (confirm("Are you here?") == true)
+  g = "You're here";
+else
+  g = "You're not here";
