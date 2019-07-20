@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <script>
+        var n = 0;
+        function startTime() {
+           var now = new Date();
+           var nowTime = (now.getHours()*3600 + now.getMinutes()*60 + now.getSeconds())/0.864;
+           
+           var sS = nowTime - Math.floor(nowTime/100)*100;
+           
+           var sM = (nowTime - sS - Math.floor(nowTime/1000)*1000)/100;
+           
+           var sH = (nowTime - sS - sM*100)/1000;
+           sH = checkTime2(sH);
+           sM = checkTime1(sM);
+           sS = checkTime2(Math.floor(sS));
+                         document.getElementById('txt').innerHTML =
+  sH + ":" + sM + ":" + sS;
+  
+  var t = setTimeout(startTime, 100);          
+           };
+           
+           function checkTime1(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+
+function checkTime2(i) {
+  if (i < 100) {i = "0" + i};
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+        </script>
+    </head>
+    <body onload="startTime()">
+    <div id="txt" style="font-size: 70px;" ></div>
+    <p>Чисто к сведению: <br />
+    В сутках 100 суперчасов <br />
+    В одном суперчасе 10 суперминут <br />
+    В одной суперминуте 100 суперсекунд <br />
+    Пока оставим миллисекунды такими какие они есть (но ненадолго) <br />
+    В одной суперсекунде 864 миллисекунды <br />
+    P.S: секунды немного проскакивают, но похуй
+    </p>
+    </body>
+</html>
