@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="text/css" href="../assets/styles.css" rel="stylesheet">
     <link type="text/css" href="assets/styles.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito+Sans&display=swap" rel="stylesheet">
@@ -15,7 +14,7 @@
 
 <body>
 
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo">
@@ -27,19 +26,19 @@
                     <div class="menu__button__line"></div>
                 </div>
                 <div class="menu">
-                    <a class="menu__item" href="#">Home</a>
-                    <a class="menu__item" href="#">About</a>
-                    <a class="menu__item" href="#">Work</a>
-                    <a class="menu__item" href="#">Process</a>
-                    <a class="menu__item" href="#">Services</a>
-                    <a class="menu__item" href="#">Testimonials</a>
-                    <a class="menu__item" href="#">Contact</a>
+                    <a class="menu__item" href="#" data-scroll="#sectionF">Home</a>
+                    <a class="menu__item" href="#" data-scroll="#about">About</a>
+                    <a class="menu__item" href="#" data-scroll="#work">Work</a>
+                    <a class="menu__item" href="#" data-scroll="#process">Process</a>
+                    <a class="menu__item" href="#" data-scroll="#services">Services</a>
+                    <a class="menu__item" href="#" data-scroll="#testimonial">Testimonials</a>
+                    <a class="menu__item" href="#" data-scroll="#contact">Contact</a>
                 </div>
             </div>
         </div>
     </header>
 
-    <div class="section section--first">
+    <div class="section section--first" id="sectionF">
 
         <div class="container">
 
@@ -64,7 +63,7 @@
     </div>
 
 
-    <div class="section section--aboutus">
+    <div class="section section--aboutus" id="about">
         <div class="container">
             <div class="twp aboutus">
                 <div class="twp__title">
@@ -176,7 +175,7 @@
     </div>
 
 
-    <div class="section section--works">
+    <div class="section section--works " id="work">
         <div class="works__col">
             <div class="works__item">
                 <i class="pe-7s-look pe-va"></i>
@@ -222,7 +221,7 @@
         </div>
     </div>
 
-    <div class="section section--process">
+    <div class="section section--process " id="process">
         <div class="container">
             <div class="twp">
                 <div class="twp__title">
@@ -240,7 +239,7 @@
     </div>
 
 
-    <div class="section section--abilities">
+    <div class="section section--abilities" id="services">
         <div class="container">
             <div class="abilities">
                 <div class="abilities__item">
@@ -344,7 +343,7 @@
     </div>
 
 
-    <div class="section section--quotes">
+    <div class="section section--quotes" id="testimonial">
         <div class="container">
             <div class="quotes__item">
                 <div class="quotes__text">
@@ -387,7 +386,7 @@
     </div>
 
 
-    <div class="section section--contact">
+    <div class="section section--contact" id="contact">
         <div class="container">
             <div class="twp">
                 <div class="twp__title">
@@ -443,6 +442,8 @@
             </div>
         </div>
     </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/app.js"></script>
 
 </body>
 
