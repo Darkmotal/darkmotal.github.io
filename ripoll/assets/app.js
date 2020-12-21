@@ -33,12 +33,26 @@ $(function(){
         
         if (blockH <= 700) {
             blockOffset -= windH/2 - blockH/2;
-        };
+        } else {
+            blockOffset -= 77;
+        }
         
         $("html, body").animate({
             scrollTop: blockOffset
             }, 500);
     });
     
+    $(".work").on("click", function(){
+        var source = $(this).attr('src');
+        
+        $("#modalImage").attr('src', source);
+        $("#modal").addClass("active");
+        
+    });
+    
+    $("#modal").on("click", function(){
+        $("#modal").removeClass("active");
+    });
     
 });
+
