@@ -25,6 +25,7 @@ $(function(){
     
     $("[data-scroll]").on("click", function(event){
         event.preventDefault();
+        $("#mobMenu").removeClass("open");
         
         var blockId = $(this).data('scroll'),
             blockOffset = $(blockId).offset().top,
@@ -53,6 +54,13 @@ $(function(){
     $("#modal").on("click", function(){
         $("#modal").removeClass("active");
     });
+   
+    $("#menu").on("click", function(){
+        $("#mobMenu").addClass("open");
+    })
     
+    $("#close").on("click", function(){
+        $("#mobMenu").removeClass("open");
+    })
 });
 
