@@ -126,6 +126,7 @@ html,body {
 }
 
 .menu__mobile {
+    display: none;
     padding-top: 60px;
     width: 60%;
     height: 100%;
@@ -608,13 +609,40 @@ html,body {
 
 .section--quotes {
     background-color: #10c9c3;
-    padding: 180px 0;
+    padding: 180px 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 24px;
     color: #fff;
     text-align: center;
     position: relative;
+}
+
+.quotes {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+.quotes::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.quotes {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.quotes__item {
+    width: 110%;
+    flex-shrink: 0;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-align: center;
+    margin: 0 60px;
+}
+
+.quotes__item:last-child {
+    margin-right: 100px;
 }
 
 .quotes__text {
