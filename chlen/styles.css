@@ -1,0 +1,75 @@
+body {
+    background-color: #1d1d1d;
+}
+
+.dick{
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.dick__head {
+    background-color: #9f4242;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.dick__head:after {
+    content: "";
+    display: block;
+    margin-left: 100px;
+    background-color: #9f4242;
+    width: 100px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.dick__main {
+    background-color: #db9171;
+    width: 600px;
+    height: 180px;
+    transition: width 1s ease-in-out;
+}
+
+.dick:hover .dick__main{
+    width: 300px;
+    
+}
+
+
+.dick__balls{
+    position: relative;
+    margin-left: -150px;
+    margin-top: 100px;
+    width: 300px;
+    height: 300px;
+}
+
+.left__ball {
+    position: absolute;
+    background-color: #e39c7e;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.right__ball {
+    position: absolute;
+    background-color: #b17a63;
+    width: 290px;
+    height: 290px;
+    left: -20px;
+    top: 20px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.dick__title {
+    font-size: 150px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
