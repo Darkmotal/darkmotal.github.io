@@ -1,0 +1,208 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after {
+    content: '';
+    content: none;
+}
+
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #fff;
+    font-size: 1.6rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    padding: 4rem 20rem;
+    box-shadow: 0px 5px 13px -1px rgba(0, 0, 0, 0.32);
+}
+
+header nav ul {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+header nav ul .nav-link {
+    margin: 0 4rem;
+}
+
+header .logo img {
+    width: 80px;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 3.6rem;
+    padding: 20rem 0;
+}
+
+.list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.card {
+    margin-top: 20px;
+    width: 250px;
+    height: 300px;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    transition: -webkit-transform 0.2s linear;
+    transition: transform 0.2s linear;
+    transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.card:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.card:hover .card__img {
+    max-height: 0;
+}
+
+.card .card__img {
+    transition: max-height 0.2s linear;
+    max-height: 20rem;
+    width: 100%;
+}
+
+.card .card__des {
+    padding: 2rem;
+}
+
+.card .card__des .card__title {
+    margin-bottom: 1rem;
+}
+
+.card .card__des .card__tags {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.card .card__des .card__tags .card__tags__item {
+    background-color: #d4d4d4;
+    margin: 0.3rem 0.6rem 0.3rem 0;
+    padding: 0.3rem 0.6rem;
+    border-radius: 1rem;
+}
+
+.card .card__des .card__des__text {
+    color: #8e8e8e;
+    margin-top: 2.5rem;
+}
+
+.route {
+    width: 100%;
+}
+
+.route .route__point {
+    width: 100%;
+    background-color: azure;
+}
+
+.route .route__point .route__point__preview {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 6rem;
+    cursor: pointer;
+}
+
+.route .route__point .route__point__preview .route__point__number {
+    background-color: darksalmon;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    line-height: 2.9rem;
+    margin-right: 6rem;
+    margin-left: 2rem;
+}
+
+.route .route__point .route__point__preview .route__point__name {
+    font-size: 2rem;
+}
+
+.route .route__point .route__point__des {
+    display: none;
+    background-color: darksalmon;
+    width: 100%;
+    padding: 2rem 3rem;
+}
