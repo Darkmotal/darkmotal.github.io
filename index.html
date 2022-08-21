@@ -1,24 +1,61 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Darkmotal</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Вас послали((</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #6b3213;
+        }
+        .fullSize {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        span {
+            font-family: Arial, sans-serif;
+            font-size: 4vh;
+            color: #fff;
+            text-align: center;
+            display: block;
+            padding: 15px;
+        }
+
+    </style>
 </head>
 <body>
-	<header>
-		<a href="index.html" class="logo">
-			<span class="logo1">DARKMOTAL</span>
-			<span class="logo2">COMPANY</span>
-		</a>
-		<li class="models_menu">
-			<ul class="C1"><a href="#">C1</a></ul>
-			<ul class="C2"><a href="#">C2</a></ul>
-			<ul class="C3"><a href="#">C3</a></ul>
-			<ul class="K-33"><a href="#">C4</a></ul>
-			<ul class="K-50"><a href="#">C5</a></ul>
-		</li>
-	</header>
+<div class="fullSize">
+    <span id="text">
+        fgfg
+    </span>
+</div>
 </body>
+<script>
+    let text = document.getElementById('text')
+    let body = document.querySelector('body')
+    const colors = ['#661d1d', '#122a66','#224f0e','#431266','#6B3213']
+    const phrases = ['К сожалению, вас послали нахуй(((',
+        '<b>Приносим свои извинения</b><br><br>По техническим причинам вас послали нахуй',
+        'Сори, тебя послали нахуй', 'Иди нахуй','<h1>Ошибка 404</h1><br>Тебя послали нахуй',
+        'Тот, кто отправил тебе это сообщение, хочет, чтобы ты пошел нахуй<br><h3>Иди нахуй</h3>',
+        'У меня для тебя две новости: хорошая и плохая<br><br><b>Хорошая:</b> тебя пока что не послали нахуй<br><b>Плохая:</b> Иди нахуй!',
+        'Сохраняй мой сайт себе в закладки, чтобы посылать друзей нахуй кративно!!!<br><br>А да... Чуть не забыл<br><br><h2>Ты тоже нахуй послан)))</h2>',
+        '<b>Добро пожаловать на новую бета версию Яндекс.карты</b><br><br>Мы уже проложили вам маршрут:<br><br>Налево, направо, вниз по улице, а потом <h2>Идите нахуй!</h2>',
+        'Мы не хотели тебя посылать, но человек который скинул тебе эту ссылку, очень просил...<br><br><h2>Иди нахуй!</h2>',
+        'Хотите знать, в чем заключается искусство посылания нахуй?<h2> Идите нахуй!</h2>',
+        'Знаешь зачем тебе отправили эту ссылку?<h2>Чтобы ты пошел нахуй)))0))</h2>']
+    body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)]
+    text.innerHTML = phrases[Math.floor(Math.random() * phrases.length)]
+</script>
 </html>
